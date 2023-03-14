@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Layout: React.FC<Props> = (props) => {
-	console.log(props);
+	// console.log(props);
 
 	return (
 		<div>
