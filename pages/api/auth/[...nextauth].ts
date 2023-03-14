@@ -13,6 +13,15 @@ import prisma from '../../../lib/prisma';
 const authHandler: NextApiHandler = (req, res) => NextAuth(req, res, options);
 export default authHandler;
 
+declare const process: {
+  env: {
+    GITHUB_ID: string;
+    GITHUB_SECRET: string;
+    SECRET:string;
+  };
+};
+
+
 const options = {
   providers: [
     GitHubProvider({
