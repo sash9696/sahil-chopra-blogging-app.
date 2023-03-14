@@ -39,7 +39,7 @@ type Props = {
 
  const Blog: React.FC<Props> = (props) => {
 
-  console.log(props)
+  // console.log(props)
 
   return (
     <Layout>
